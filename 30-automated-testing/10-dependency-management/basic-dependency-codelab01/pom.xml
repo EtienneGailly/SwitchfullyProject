@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>10-dependency-management</artifactId>
+        <groupId>com.switchfully</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>basic-dependency-codelab01</artifactId>
+
+    <dependencies>
+      <dependency>
+        <groupId>com.github.freva</groupId>
+        <artifactId>ascii-table</artifactId>
+        <version>1.8.0</version>
+      </dependency>
+    </dependencies>
+</project>

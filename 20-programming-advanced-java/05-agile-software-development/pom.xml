@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.switchfully.programming.advanced</groupId>
+        <artifactId>20-programming-advanced-java</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>05-agile-software-development</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>05-test-driven-development-first-steps</module>
+        <module>10-test-driven-development</module>
+        <module>50-debugging</module>
+    </modules>
+
+</project>

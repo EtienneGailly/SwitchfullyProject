@@ -1,0 +1,19 @@
+Feature: As a student I can log into my student account
+  Scenario: Logging in with a registered student account
+    Given A student with an existing account
+    When Going to the login page
+    And Filling in their credentials
+    And Pressing the login button
+    Then Student will be navigated to their profile page
+    And The message 'Logged in as student <student_name>' will be visible.
+  Scenario: Logging in with a non-existing student account
+    Given A student with a non-existing account
+    When Going to the login page
+    And Filling in their credentials
+    And Pressing the login button
+    Then A warning message will appear: 'Invalid credentials'
+  Scenario: Logging in with a student account with the wrong password
+    Given A student with a existing account
+    When Going to the login page
+    And Filling in the wrong password
+    Then A warning message will appear: 'Invalid credentials'

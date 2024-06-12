@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>com.switchfully</groupId>
+    <artifactId>30-automated-testing</artifactId>
+    <version>1.0-SNAPSHOT</version>
+  </parent>
+
+
+  <artifactId>40-selenium</artifactId>
+  <packaging>pom</packaging>
+  <dependencies>
+    <dependency>
+      <groupId>org.apache.httpcomponents.client5</groupId>
+      <artifactId>httpclient5</artifactId>
+      <version>5.2.1</version>
+      <scope>test</scope>
+    </dependency>
+
+    <dependency>
+      <groupId>io.github.bonigarcia</groupId>
+      <artifactId>webdrivermanager</artifactId>
+      <version>5.8.0</version>
+      <scope>test</scope>
+    </dependency>
+
+  </dependencies>
+
+
+  <modules>
+    <module>selenium-codelab01</module>
+    <module>selenium-codelab02</module>
+    <module>selenium-codelab03</module>
+    <module>selenium-codelab04</module>
+    <module>selenium-codelab05</module>
+    <module>selenium-codelab06</module>
+    <module>selenium-codelab07</module>
+    <module>selenium-full-project</module>
+  </modules>
+
+</project>

@@ -1,0 +1,25 @@
+# TDD and clean code
+- I can develop a java application in which I strive for quality and readability.
+    - I can write an new requirement test-first
+        - I understand the reason why to write code test-first
+        - I understand the reason why one should maintain tests
+        - I can split a complex assignment into a list of testable requirements
+        - I know how to select a good requirement as a starting point
+    - I can write code in pair
+        - I can have the roll of both navigator and driver
+        - I understand the benefits of pair programming
+        - I understand the disadvantages of pair programming
+        - I am open to pair with everyone in the team. Even if we differ a lot on a personal level
+    - I know how to refactor
+        - I can recognize the difference between clean code and difficult to read code
+        - I understand the benefits of clean code
+        - I can recognize some code smells
+        - I know several basic refactoring techniques
+            - extract variable
+            - extract field
+            - extract constant
+            - extract method
+            - extract class
+            - inline variable
+        - When I code I take time to refactor my code regularly, following the TDD cycle of writing a test, making it 
+        work and then make it more pretty (refactor). 

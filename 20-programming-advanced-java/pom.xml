@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <artifactId>testing-2024-04</artifactId>
+        <groupId>com.switchfully</groupId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <groupId>com.switchfully.programming.advanced</groupId>
+    <artifactId>20-programming-advanced-java</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>05-agile-software-development</module>
+        <module>20-data-structures/10-list</module>
+        <module>20-data-structures/20-queue</module>
+        <module>20-data-structures/30-map</module>
+        <module>20-data-structures/40-set</module>
+        <module>20-data-structures/50-combined</module>
+        <module>20-data-structures/60-additional</module>
+    </modules>
+
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.switchfully.programming.fundamentals</groupId>
+        <artifactId>20-oop</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>10-objects-and-classes</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>11-objects</module>
+        <module>12-object-references</module>
+        <module>13-null</module>
+        <module>21-classes</module>
+        <module>22-encapsulation</module>
+        <module>30-static-class-members</module>
+        <module>40-enum</module>
+    </modules>
+
+</project>

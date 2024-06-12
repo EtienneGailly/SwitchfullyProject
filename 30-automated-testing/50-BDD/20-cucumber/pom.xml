@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.switchfully</groupId>
+        <artifactId>50-BDD</artifactId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <artifactId>20-cucumber</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>cucumber-codelab01</module>
+        <module>cucumber-codelab02</module>
+        <module>cucumber-codelab03</module>
+        <module>cucumber-codelab04</module>
+        <module>cucumber-codelab05</module>
+        <module>cucumber-codelab06</module>
+        <module>cucumber-codelab07</module>
+        <module>cucumber-codelab08</module>
+        <module>cucumber-full-project</module>
+    </modules>
+</project>

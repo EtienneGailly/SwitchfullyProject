@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.switchfully</groupId>
+        <artifactId>testing-2024-04</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>30-automated-testing</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>10-dependency-management</module>
+        <module>20-spring-boot</module>
+        <module>40-selenium</module>
+        <module>50-BDD</module>
+    </modules>
+</project>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.switchfully.programming.fundamentals</groupId>
+        <artifactId>10-programming-fundamentals-java</artifactId>
+        <version>1.0-SNAPSHOT</version>
+        <relativePath>../pom.xml</relativePath>
+    </parent>
+
+    <artifactId>10-basics</artifactId>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>00-presentation-code-examples</module>
+        <module>10-variables-types</module>
+        <module>20-expressions</module>
+        <module>30-methods</module>
+        <module>40-strings</module>
+        <module>50-decision-making</module>
+        <module>60-arrays</module>
+        <module>70-loops</module>
+        <module>71-recursive-functions</module>
+        <module>80-regex</module>
+        <module>90-kotlin</module>
+        <module>additional-20-arrays2D</module>
+    </modules>
+
+
+</project>
