@@ -27,7 +27,7 @@ public class registerSteps {
     @Given("a visitor is on the register page with display name {string}, email {string}, password {string}, and repeat password {string}")
     public void aVisitorIsOnTheRegisterPageWithDetails(String displayName, String email, String password, String repeatPassword){
 //        User user = users.get(0);
-//        homePage.open();
+        homePage.open();
 //        homePage.goToRegister();
 //        registerPage.fillInRegisterForm(user.getDisplayName(), user.getEmail(), user.getPassword(), user.getRepeatPassword());
 //        homePage.open();
@@ -37,7 +37,7 @@ public class registerSteps {
 }
 @When("Clicking the register button")
     public void i_click_on_the_register_button() {
-        registerPage.getSubmitButton().click();
+        homePage.goToRegister();
     }
 
     @Then("I can log into my account")
