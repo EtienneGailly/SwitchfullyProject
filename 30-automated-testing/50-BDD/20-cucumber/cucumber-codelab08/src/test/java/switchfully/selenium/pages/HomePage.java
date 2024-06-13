@@ -24,6 +24,9 @@ public class HomePage {
     @FindBy(how = CSS, using = "app-home")
     private WebElement appHome;
 
+    @FindBy(how = XPATH, using = "/html/body/app-root/app-layout/div/app-header/div/nav/div/div/ul/li[3]/a")
+    private WebElement registerButton;
+
     public HomePage(ChromeDriver chromeDriver, LoginPage loginPage, RegisterPage registerPage) {
         this.chromeDriver = chromeDriver;
         this.loginPage = loginPage;
@@ -35,12 +38,16 @@ public class HomePage {
         return this;
     }
 
-//    public LoginPage goToLogin() {
-//        loginButton.click();
-//        new WebDriverWait(chromeDriver, Duration.ofMillis(5000))
-//                .until((driver) -> this.loginPage.getLoginButton().isDisplayed());
-//        return loginPage;
-//    }
+    public RegisterPage goToRegister() {
+        registerButton.click();
+        new WebDriverWait(chromeDriver, Duration.ofMillis(5000))
+                .until((driver) -> this.registerPage.getSubmitButton().isDisplayed());
+        return registerPage;
+    }
+
+    private WebElement getRegisterButton() {
+        return registerButton;
+    }
 
     public WebElement getAppHome() {
         return appHome;
@@ -50,4 +57,5 @@ public class HomePage {
     public void init() {
         PageFactory.initElements(chromeDriver, this);
     }
+
 }

@@ -8,6 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
 import switchfully.selenium.pages.HomePage;
 
+import java.util.List;
+
 public class homeSteps {
     private HomePage homePage;
 
