@@ -31,6 +31,7 @@ public class User {
         return password;
     }
 
+
     public String getRepeatPassword() {
         return repeatPassword;
     }
