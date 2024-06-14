@@ -7,7 +7,7 @@ Feature: As a student I can view my profile
     And Viewing their name and display name
 
   Scenario: Navigating to the profile page using the navigation bar
-    Given A student with a non-existing account
+    Given A student is logged in
     When Navigating to their profile page using the navigation bar
     Then Student will be navigated to their profile page
     And Viewing their name and display name

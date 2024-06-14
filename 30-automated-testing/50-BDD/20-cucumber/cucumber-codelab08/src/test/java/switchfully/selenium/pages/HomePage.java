@@ -17,6 +17,7 @@ public class HomePage {
     private ChromeDriver chromeDriver;
     private LoginPage loginPage;
     private RegisterPage registerPage;
+    private ProfilePage profilePage;
 
     @FindBy(how = XPATH, using = "/html/body/app-root/app-layout/div/app-header/div/nav/div/div/ul/li[2]/a")
     private WebElement loginButton;
@@ -27,10 +28,14 @@ public class HomePage {
     @FindBy(how = XPATH, using = "/html/body/app-root/app-layout/div/app-header/div/nav/div/div/ul/li[3]/a")
     private WebElement registerButton;
 
-    public HomePage(ChromeDriver chromeDriver, LoginPage loginPage, RegisterPage registerPage) {
+    @FindBy(how = XPATH, using = "//*[@id=\"navbarSupportedContent\"]/ul/li[4]/a")
+    private WebElement profileButton;
+
+    public HomePage(ChromeDriver chromeDriver, LoginPage loginPage, RegisterPage registerPage, ProfilePage profilePage) {
         this.chromeDriver = chromeDriver;
         this.loginPage = loginPage;
         this.registerPage = registerPage;
+        this.profilePage = profilePage;
     }
 
     public HomePage open() {
@@ -45,6 +50,22 @@ public class HomePage {
         return registerPage;
     }
 
+    public LoginPage goToLogin() {
+        loginButton.click();
+        new WebDriverWait(chromeDriver, Duration.ofMillis(5000))
+                .until((driver) -> this.loginPage.getLoginButton().isDisplayed());
+        return loginPage;
+    }
+
+    public ProfilePage goToProfile() {
+        profileButton.click();
+        new WebDriverWait(chromeDriver, Duration.ofMillis(5000))
+                .until((driver) -> this.profilePage.getAppProfile().isDisplayed());
+        return profilePage;
+    }
+
+
+
     private WebElement getRegisterButton() {
         return registerButton;
     }
@@ -58,4 +79,17 @@ public class HomePage {
         PageFactory.initElements(chromeDriver, this);
     }
 
+    public WebElement getProfileButton() {
+        return profileButton;
+    }
+
+    public HomePage waitingForPageIsDisplayed() {
+        new WebDriverWait(chromeDriver, Duration.ofMillis(5000))
+                .until((driver) -> this.getAppHome().isDisplayed());
+        return this;
+    }
+
+    public String getCurrentURL() {
+        return chromeDriver.getCurrentUrl();
+    }
 }
